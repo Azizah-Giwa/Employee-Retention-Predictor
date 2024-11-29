@@ -51,9 +51,21 @@ To ensure a comprehensive analysis, I will employ a combination of statistical a
 - Actionable Insights: Combine interpretable findings from logistic regression with feature importance insights from tree-based models to deliver comprehensive recommendations to stakeholders.
 
 import numpy as np
+
 import pandas as pd
+
 import matplotlib.pyplot as plt
+
 import seaborn as sns
+
+data = [['Mercury', 2440, 0], ['Venus', 6052, 0,], ['Earth', 6371, 1],
+        ['Mars', 3390, 2], ['Jupiter', 69911, 80], ['Saturn', 58232, 83],
+        ['Uranus', 25362, 27], ['Neptune', 24622, 14]
+]
+
+cols = ['Planet', 'radius_km', 'moons']
+
+planets = pd.DataFrame(data, columns=cols)
 
 data = [['Mercury', 2440, 0], ['Venus', 6052, 0,], ['Earth', 6371, 1],
         ['Mars', 3390, 2], ['Jupiter', 69911, 80], ['Saturn', 58232, 83],
