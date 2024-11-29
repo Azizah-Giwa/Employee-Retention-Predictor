@@ -38,3 +38,28 @@ The dataset that I'll be using for this project contains 15,000 rows and 10 colu
 | promotion_last_5years   |  Whether or not the employee was promoted in the last 5 years       |
 | Department              |  The employee's department                                          |
 | salary                  |  The employee's salary (U.S. dollars)                               |
+
+### **Project Approach**
+
+To ensure a comprehensive analysis, I will employ a combination of statistical and machine learning models for this project. Multiple models will be developed and evaluated, with the best-performing model selected as the champion.
+
+**Implementation Workflow:**
+
+- Initial Data Analysis with Logistic Regression: I will use logistic regression to establish a baseline and gain interpretability, identifying variables with the strongest linear relationships to attrition.
+- Advanced Modeling with Tree-Based Approaches: I will build and evaluate decision trees, random forests, and XGBoost to capture complex patterns and interactions that logistic regression cannot model effectively.
+- Model Comparison and Selection: I will evaluate all models using relevant metrics (e.g., recall, precision, accuracy, F1-score) on a validation set. Then I'll select the champion model.
+- Actionable Insights: Combine interpretable findings from logistic regression with feature importance insights from tree-based models to deliver comprehensive recommendations to stakeholders.
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+data = [['Mercury', 2440, 0], ['Venus', 6052, 0,], ['Earth', 6371, 1],
+        ['Mars', 3390, 2], ['Jupiter', 69911, 80], ['Saturn', 58232, 83],
+        ['Uranus', 25362, 27], ['Neptune', 24622, 14]
+]
+
+cols = ['Planet', 'radius_km', 'moons']
+
+planets = pd.DataFrame(data, columns=cols)
