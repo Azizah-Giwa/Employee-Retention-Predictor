@@ -54,3 +54,12 @@ To ensure a comprehensive analysis, I will employ a combination of statistical a
 
 **Step 1: Imports**
 
+I’m starting by importing the packages that I will need.
+
+![Employee Retention Predictor](assets/inp_1.png)
+
+Then, loading the dataset into a dataframe.
+
+![Employee Retention Predictor](assets/inp_2.png)
+
+![Employee Retention Predictor](assets/out_2.png)
